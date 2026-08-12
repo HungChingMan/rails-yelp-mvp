@@ -1,0 +1,12 @@
+<div class="container my-5">
+  <h1>Add a New Restaurant</h1>
+  <!--
+  <form action="<%#= restaurants_path %>" method="post">
+  </form>
+  -->
+  <%#= form_with model: @restaurant %>
+  <%# Simple: adds the action, method, authenticity token %>
+
+  <%= render 'restaurants/form', restaurant: @restaurant  %>
+
+</div>
